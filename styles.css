@@ -1,0 +1,88 @@
+:root {
+  /* font and color tokens */
+  --font-sans: "Josefin Sans", sans-serif;
+  --primary-color: hsl(228, 45%, 44%); /* use this color where needed */
+  --text-color: hsl(230, 17%, 14%);
+  --muted-color: hsl(227, 12%, 61%);
+  --input-border: hsl(223, 100%, 88%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: hsl(0, 0%, 98%);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 1400px;
+  display: flex;
+  /* align-items: center */
+  /* justify-content: center; */
+  /* height: 100vh; */
+  /* text-align: center; */
+  padding: 20px;
+  border: 1px solid hsl(233, 8%, 62%);
+}
+
+.content {
+  border: 2px solid hsl(233, 8%, 62%);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: var(--muted-color);
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--muted-color);
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-color);
+}
+
+input[type="email"]::placeholder {
+  color: var(--input-border);
+  opacity: 1;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 0.875rem;
+  color: hsl(233, 8%, 62%);
+}
+
+a,
+.attribution a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
