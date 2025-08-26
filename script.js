@@ -1,1 +1,3 @@
-Document.body.style.backgroundColor = "lightblue";
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.style.backgroundColor = "lightblue";
+});
