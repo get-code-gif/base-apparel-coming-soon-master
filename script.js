@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.body.style.backgroundColor = "lightblue";
+  document.body.style.color = "lightblack";
 });
 
 // https://copilot.microsoft.com/shares/n7jG3fEtukT9sNhDCzwaY
