@@ -2,9 +2,10 @@
   /* font and color tokens */
   --font-sans: "Josefin Sans", sans-serif;
   --primary-color: hsl(228, 45%, 44%); /* use this color where needed */
-  --text-color: hsl(230, 17%, 14%);
+  --text-color: hsl(0, 6%, 24%);
   --muted-color: hsl(227, 12%, 61%);
   --input-border: hsl(223, 100%, 88%);
+  --font-color: hsl(0, 36%, 70%);
 }
 
 * {
@@ -15,59 +16,78 @@
 
 body {
   font-family: var(--font-sans);
-  background: hsl(0, 0%, 98%);
+  /* background: hsl(0, 0%, 98%); */
   color: var(--text-color);
 }
 
 main {
-  /* max-width: 1400px;
   display: flex;
-
-  height: 600px;
-  min-height: 10px; */
-  /* align-items: center */
-  /* justify-content: center; */
-  /* height: 100vh; */
-  /* text-align: center; */
-  /* padding: 30px auto; */
-  border: 1px solid hsl(233, 56%, 49%);
+  padding: 10px;
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: 120% 189%;
+  border: 4px solid hsl(233, 56%, 49%);
   margin: 0 80px;
-  height: 100%;
   min-height: 100vh;
 }
-.container {
-  border: 2px solid red;
-  display: flex;
-  height: 100vh;
-  /* margin: 0 40px; */
-}
+
 .content {
   border: 2px solid hsl(233, 66%, 57%);
-  margin: 0 90px;
-  width: 50%;
-  /* padding: 0 60px; */
+  margin: 0;
+  width: 80%;
+  height: auto;
+
+  /* padding: 0 5px; */
+}
+
+.content-1 {
+  /* border: 2px solid blue; */
+  padding: 0px 120px;
+  /* text-align: center; */
+}
+
+.content-1 img {
+  border: 2px solid red;
+  margin: 2rem 0 6rem 0;
+  width: 150px;
+  height: auto;
+}
+
+.content-1 h1 {
+  border: 2px solid green;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  line-height: 1.2;
+  margin: 0 8rem 2rem 0;
+  color: var(--text-color);
+  font-weight: 0;
+}
+
+.content-1 span {
+  font-weight: 100;
+  color: var(--font-color);
 }
 
 picture img {
   /* border: 2px solid red; */
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 600px;
+  height: 100%; */
   object-fit: cover;
   display: block; /* <-- added: removes the baseline gap */
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-  font-weight: 700;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 p {
   font-size: 1rem;
   margin-bottom: 30px;
   line-height: 1.5;
-  color: var(--muted-color);
+  margin: 0 2rem 2rem 0;
+  color: var(--font-color);
 }
 
 label {
@@ -79,7 +99,7 @@ label {
 }
 
 input[type="email"] {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border: 1px solid var(--input-border);
   border-radius: 5px;
@@ -89,8 +109,8 @@ input[type="email"] {
 }
 
 input[type="email"]::placeholder {
-  color: var(--input-border);
-  opacity: 1;
+  color: var(--font-color);
+  opacity: 0.5;
 }
 
 footer {
