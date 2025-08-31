@@ -31,23 +31,26 @@
   </head>
   <body>
     <main>
-      <div class="content">
-        <img src="./images/logo.svg" alt="Base Apparel Logo" />
-        <h1>We're coming soon</h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="email@example.com" />
+      <div class="container">
+        <div class="content">
+          <img src="./images/logo.svg" alt="Base Apparel Logo" />
+          <h1>We're coming soon</h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="email@example.com" />
+        </div>
+        <div class="content-img">
+          <picture>
+            <source srcset="./images/hero-desktop.jpg" />
+            <!-- media="(min-width: 600px)" -->
+            <img src="./images/hero-mobile.jpg" alt="Hero Image" />
+          </picture>
+        </div>
       </div>
-
-      <picture>
-        <source srcset="./images/hero-desktop.jpg" />
-        <!-- media="(min-width: 600px)" -->
-        <img src="./images/hero-mobile.jpg" alt="Hero Image" />
-      </picture>
     </main>
 
     <footer>
