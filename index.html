@@ -22,7 +22,7 @@
     <style>
       .attribution {
         font-size: 11px;
-        text-align: center;
+        /* text-align: center; */
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -31,8 +31,8 @@
   </head>
   <body>
     <main>
-      <div class="content">
-        <div class="content-1">
+      <section>
+        <div class="content">
           <img src="./images/logo.svg" alt="Base Apparel Logo" />
           <h1><span>We're</span> coming soon</h1>
           <p>
@@ -42,17 +42,32 @@
           </p>
           <!-- <label for="email">Email Address</label> -->
           <input type="email" id="email" placeholder="email@example.com" />
+          <input type="submit" />
+          <img
+            class="icon-arrow"
+            src="./images/icon-arrow.svg"
+            alt="arrow Icon"
+          />
+          <!-- <i class="icon-arrow"
+            ><img src="./images/icon-arrow.svg" alt="arrow Icon"
+          /></i> -->
+          <!-- <i class="icon-error"
+            ><img src="./images/icon-error.svg" alt="Error Icon"
+          /></i> -->
         </div>
-      </div>
-      <div class="content-img">
-        <picture>
-          <source srcset="./images/hero-desktop.jpg" />
-          <!-- media="(min-width: 600px)" -->
-          <img src="./images/hero-mobile.jpg" alt="Hero Image" />
-        </picture>
-      </div>
+        <div class="content-img">
+          <picture>
+            <source srcset="./images/hero-desktop.jpg" />
+            <!-- media="(min-width: 600px)" -->
+            <img src="./images/hero-mobile.jpg" alt="Hero Image" />
+          </picture>
+        </div>
+      </section>
     </main>
-
+    <!-- <div class="error-message" id="error-message">
+      <img src="./images/icon-error.svg" alt="Error Icon" />
+      <p>Please provide a valid email</p>
+    </div> -->
     <footer>
       <p class="attribution">
         Challenge by
