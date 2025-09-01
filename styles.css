@@ -124,7 +124,7 @@ button[type="submit"] {
   background-color: hsl(0, 94%, 81%);
   color: white;
   border: none;
-  padding: 20.8px 40px;
+  padding: 20.5px 40px;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
@@ -157,8 +157,8 @@ input[type="email"]::placeholder {
   top: -20px;
   /* right: 10px; Adjust as needed */
   /* transform: translateY(-50%); */
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   /* background-color: black; */
   pointer-events: none; /* Prevent the icon from blocking input clicks */
 }
