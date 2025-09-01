@@ -124,12 +124,12 @@ button[type="submit"] {
   background-color: hsl(0, 94%, 81%);
   color: white;
   border: none;
-  padding: 20.5px 40px;
-  border-radius: 30px;
+  padding: 21.8px 40px;
+  border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
   position: relative;
-  left: 240px;
+  left: 260px;
   /* box-shadow: 1px 1px 129px var(--primary-color); */
   /* border: 1px solid red; */
   box-shadow: 6px 8px 26px rgba(59, 59, 59, 0.5);
@@ -144,7 +144,7 @@ input[type="email"]::placeholder {
 .input-container {
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 60%;
 }
 
 /* .input-container input[type="email"] {
