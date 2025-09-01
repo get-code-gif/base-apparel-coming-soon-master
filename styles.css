@@ -118,19 +118,22 @@ input[type="email"] {
 input[type="email"]:focus {
   outline: 0.2px solid var(--primary-color);
   border-color: var(--primary-color);
-  /* box-shadow: 0 0 5px var(--primary-color); */
 }
 
-input[type="submit"] {
+button[type="submit"] {
   background-color: hsl(0, 94%, 81%);
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 20.8px 40px;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
   position: relative;
-  right: 40px;
+  left: 240px;
+  /* box-shadow: 1px 1px 129px var(--primary-color); */
+  /* border: 1px solid red; */
+  box-shadow: 6px 8px 26px rgba(59, 59, 59, 0.5);
+  /* box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.12); */
 }
 
 input[type="email"]::placeholder {
@@ -138,7 +141,60 @@ input[type="email"]::placeholder {
   opacity: 0.5;
 }
 
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+/* .input-container input[type="email"] {
+  width: 100%;
+  padding-right: 40px;
+} */
+
+.input-container img.icon-arrow {
+  position: absolute;
+  top: -20px;
+  /* right: 10px; Adjust as needed */
+  /* transform: translateY(-50%); */
+  width: 17px;
+  height: 17px;
+  /* background-color: black; */
+  pointer-events: none; /* Prevent the icon from blocking input clicks */
+}
+
+.input-container input[type="email"] {
+  width: 100%;
+  padding: 12px 24px;
+  border: 1px solid var(--input-border);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-color);
+}
+
+.input-container button[type="submit"] {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+/* img.icon-arrow {
+  position: absolute; */
+/* right: 820px;
+  top: 452px; */
+/* width: 17px;
+  height: 17px;
+  background-color: black;
+  transform: translateY(-50%); */
+/* } */
+
 footer {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,16 +217,6 @@ a,
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
-}
-
-img.icon-arrow {
-  position: absolute;
-  right: 820px;
-  top: 452px;
-  width: 17px;
-  height: 17px;
-  /* background-color: black; */
-  transform: translateY(-50%);
 }
 
 .error-message {
