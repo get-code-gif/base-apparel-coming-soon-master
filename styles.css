@@ -56,7 +56,7 @@ section {
 .content img {
   /* border: 2px solid red; */
   margin: 2rem 0 6rem 0;
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 
@@ -105,7 +105,7 @@ label {
 }
 
 input[type="email"] {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   border: 1px solid var(--input-border);
   border-radius: 5px;
@@ -124,12 +124,19 @@ button[type="submit"] {
   background-color: hsl(0, 94%, 81%);
   color: white;
   border: none;
-  padding: 21.8px 40px;
-  border-radius: 20px;
+  padding: 22px 44px;
+  border-radius: 25px;
   font-size: 1rem;
   cursor: pointer;
-  position: relative;
-  left: 260px;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  /* position: relative;
+  left: 260px; */
   /* box-shadow: 1px 1px 129px var(--primary-color); */
   /* border: 1px solid red; */
   box-shadow: 6px 8px 26px rgba(59, 59, 59, 0.5);
@@ -163,36 +170,6 @@ input[type="email"]::placeholder {
   pointer-events: none; /* Prevent the icon from blocking input clicks */
 }
 
-.input-container input[type="email"] {
-  width: 100%;
-  padding: 12px 24px;
-  border: 1px solid var(--input-border);
-  border-radius: 30px;
-  font-size: 1rem;
-  font-family: inherit;
-  color: var(--text-color);
-}
-
-.input-container button[type="submit"] {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-}
-
-/* img.icon-arrow {
-  position: absolute; */
-/* right: 820px;
-  top: 452px; */
-/* width: 17px;
-  height: 17px;
-  background-color: black;
-  transform: translateY(-50%); */
-/* } */
-
 footer {
   margin-top: 40px;
   display: flex;
@@ -220,16 +197,26 @@ a,
 }
 
 .error-message {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  background-color: hsl(0, 100%, 98%);
+  /* width: ; */
+  /* padding: 1rem; */
+  /* background-color: hsl(0, 100%, 98%);
   border: 1px solid hsl(0, 100%, 90%);
-  border-radius: 5px;
-  margin-top: 1rem;
+  border-radius: 5px; */
+  /* margin-top: 1rem; */
 }
 
 .error-message img {
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 66%;
+  top: -14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
 }
