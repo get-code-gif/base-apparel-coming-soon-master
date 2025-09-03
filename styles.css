@@ -106,7 +106,7 @@ label {
 
 input[type="email"] {
   width: 100%;
-  padding: 10px;
+  padding: 13px;
   border: 1px solid var(--input-border);
   border-radius: 5px;
   font-size: 1rem;
@@ -124,21 +124,17 @@ button[type="submit"] {
   background-color: hsl(0, 94%, 81%);
   color: white;
   border: none;
-  padding: 22px 44px;
-  border-radius: 25px;
+  padding: 22px 49px;
+  border-radius: 40px;
   font-size: 1rem;
   cursor: pointer;
   position: absolute;
-  right: -1px;
-  top: 50%;
+  right: 0;
+  top: 0;
+  height: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-50%);
-  /* position: relative;
-  left: 260px; */
-  /* box-shadow: 1px 1px 129px var(--primary-color); */
-  /* border: 1px solid red; */
   box-shadow: 6px 8px 26px rgba(59, 59, 59, 0.5);
   /* box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.12); */
 }
@@ -152,6 +148,7 @@ input[type="email"]::placeholder {
   position: relative;
   display: inline-block;
   width: 60%;
+  min-height: 20px;
 }
 
 /* .input-container input[type="email"] {
@@ -196,27 +193,15 @@ a,
   font-weight: bold;
 }
 
-.error-message {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  /* width: ; */
-  /* padding: 1rem; */
-  /* background-color: hsl(0, 100%, 98%);
-  border: 1px solid hsl(0, 100%, 90%);
-  border-radius: 5px; */
-  /* margin-top: 1rem; */
-}
-
-.error-message img {
-  /* margin-right: 0.5rem; */
+.error-icon img {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 66%;
-  top: -14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
+  top: -20px;
+  right: 110px;
+  display: none;
+  width: 16px; /* sensible size for an icon */
+  height: 16px;
+  /* display: inline-block !important; */
+  object-fit: contain;
+  pointer-events: none;
 }
+/* ...existing code... */
