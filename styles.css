@@ -34,7 +34,7 @@ section {
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   background-image: url("./images/bg-pattern-desktop.svg");
   background-repeat: repeat;
   background-size: contain;
@@ -47,13 +47,13 @@ section {
 }
 
 .content {
-  border: 2px solid hsl(233, 66%, 57%);
+  /* border: 2px solid hsl(233, 66%, 57%); */
   padding-left: 6rem;
   width: 80%;
   height: auto;
 }
 
-.content img {
+.logo {
   /* border: 2px solid red; */
   margin: 2rem 0 6rem 0;
   width: 120px;
@@ -158,7 +158,7 @@ input[type="email"]::placeholder {
 
 .input-container img.icon-arrow {
   position: absolute;
-  top: -20px;
+  top: 13px;
   /* right: 10px; Adjust as needed */
   /* transform: translateY(-50%); */
   width: 15px;
@@ -195,7 +195,7 @@ a,
 
 .error-icon img {
   position: absolute;
-  top: -20px;
+  top: 13px;
   right: 110px;
   display: none;
   width: 16px; /* sensible size for an icon */
@@ -222,15 +222,13 @@ a,
 /* medium device styles */
 
 @media screen and (max-width: 959px) {
-  /* body {
-    background-color: aquamarine;
-  } */
   main {
     height: calc(100vh - 10px);
   }
-  section {
-    padding: 1rem 0.6rem;
-  }
+  /* section { */
+  /* border: 2px solid blue; */
+  /* padding: 1rem 0.6rem; */
+  /* } */
   .content {
     /* padding: 0; */
     width: 60%;
@@ -262,9 +260,9 @@ a,
   main {
     height: auto;
   }
-  section {
-    padding: 1rem 0.6rem;
-  }
+  /* section { */
+  /* padding: 1rem 0.6rem; */
+  /* } */
   .content {
     /* padding: 0; */
     width: 70%;
@@ -297,33 +295,71 @@ a,
 
 @media screen and (max-width: 699px) {
   section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: "logo" "img" "content";
   }
 
-  picture {
-    order: 0; /* Set to 0 to ensure it's first */
-    width: 100%;
+  /* make .content act as if it isn't a wrapper so its img becomes a direct grid child */
+  .content {
+    display: contents;
   }
 
-  .content:not(img.logo) {
-    order: 1; /* Changed from order: 2 */
+  .logo {
+    grid-area: logo;
+    margin: 2rem 0 2rem 2rem;
+    width: 100px;
+    height: auto;
+  } /* now works because img is treated as a grid item */
+  .content-img {
+    grid-area: img;
+  }
+  .content {
+    grid-area: content;
     width: 100%;
     padding: 2rem;
   }
+
   h1 {
-    font-size: 2.5rem;
-    margin: 0 2rem 4rem 0;
+    font-size: 2rem;
+    margin: 4rem 2rem 1rem 2rem;
+    /* border: 2px solid red; */
+    text-align: center;
   }
   p {
-    font-size: 0.775rem;
+    font-size: 0.8rem;
     line-height: 1.5;
-    margin: 0 6rem 4rem 0;
+    margin: 2rem 1rem 1rem 1rem;
     color: var(--font-color);
+    text-align: center;
   }
   .input-container {
-    width: 80%;
+    width: 90%;
+    margin: 2rem 1rem 1rem 1rem;
   }
+
+  button[type="submit"] {
+    position: absolute;
+    padding: 22px 30px;
+  }
+
+  .error-icon img {
+    position: absolute;
+    top: 13px;
+    right: 80px;
+    display: none;
+    width: 16px; /* sensible size for an icon */
+    height: 16px;
+    /* display: inline-block !important; */
+    object-fit: contain;
+    pointer-events: none;
+  }
+  .error-text {
+    color: var(--font-color);
+    font-size: 0.775rem;
+    opacity: 0.5;
+    margin: 5px 0 0 20px;
+  }
+
   footer {
     margin-top: 10px;
   }
