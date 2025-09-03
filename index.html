@@ -33,7 +33,7 @@
     <main>
       <section>
         <div class="content">
-          <img src="./images/logo.svg" alt="Base Apparel Logo" />
+          <img src="./images/logo.svg" class="logo" alt="Base Apparel Logo" />
           <h1><span>We're</span> coming soon</h1>
           <p>
             Hello fellow shoppers! We're currently building our new fashion
@@ -58,8 +58,11 @@
         </div>
         <div class="content-img">
           <picture>
-            <source srcset="./images/hero-desktop.jpg" />
-            <!-- media="(min-width: 600px)" -->
+            <source
+              media="(min-width: 700px)"
+              srcset="./images/hero-desktop.jpg"
+            />
+
             <img src="./images/hero-mobile.jpg" alt="Hero Image" />
           </picture>
         </div>
