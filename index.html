@@ -41,19 +41,33 @@
             and our launch deals.
           </p>
           <!-- <label for="email">Email Address</label> -->
-          <div class="input-container">
-            <input type="email" id="email" placeholder="email@example.com" />
-            <button type="submit" value="submit">
+          <div class="input-container" novalidate>
+            <input
+              type="email"
+              id="email"
+              placeholder="email@example.com"
+              name="email"
+              aria-describedby="error-text"
+              aria-invalid="false"
+              required
+            />
+            <button type="submit" value="submit" aria-label="Submit Email">
               <img
                 class="icon-arrow"
                 src="./images/icon-arrow.svg"
                 alt="arrow Icon"
+                aria-hidden="true"
               />
             </button>
-            <i class="error-icon">
+            <i class="error-icon" aria-hidden="true">
               <img src="./images/icon-error.svg" alt="Error Icon" />
             </i>
-            <span class="error-text"></span>
+            <span
+              id="error-text"
+              class="error-text"
+              aria-live="polite"
+              aria-atomic="true"
+            ></span>
           </div>
         </div>
         <div class="content-img">
