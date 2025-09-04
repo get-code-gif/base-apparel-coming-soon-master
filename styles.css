@@ -139,6 +139,10 @@ button[type="submit"] {
   /* box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.12); */
 }
 
+button[type="submit"]:hover {
+  background-color: hsl(0, 93%, 68%);
+}
+
 input[type="email"]::placeholder {
   color: var(--font-color);
   opacity: 0.5;
