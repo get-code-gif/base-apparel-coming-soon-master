@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let button = document.querySelector("button"); // Make sure you select the button too
   let error = document.querySelector(".error-text");
   let errorIcon = document.querySelector(".error-icon img");
-  if (!input || !button || !error || !errorIcon) return;
+  if (!input || !button || !error || !errorIcon) {
+    console.warn("All elements found:", { input, button, error, errorIcon });
+    return;
+  }
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   //start hidden
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("hello");
       input.value = "";
       error.style.display = "none";
+      errorIcon.style.display = "none";
       error.textContent = "";
       console.log("Valid email:", email);
       return;
