@@ -55,3 +55,35 @@ document.addEventListener("DOMContentLoaded", () => {
     input.focus();
   });
 });
+
+// let questions = [
+//   {
+//   category:"Javascript quiz",
+//   question: "Which of the following is used to declare a variable in JavaScript?",
+//   choices: ["var", "class","let"],
+//   answer: "var",
+//   correct: ["Yes", "No"],
+// },
+// {
+//   category: "Java quiz",
+//   question: "Which keyword is used to define a class in Java?",
+//   choices: ["var","object", "class"],
+//   answer: "class",
+//   correct: ["Yes", "No"]
+// }
+// ]
+// let getRandomQuestion = (questions) => {
+//   let index = Math.floor(Math.random() * questions.length);
+//   return questions[index];
+// }
+
+// let getRandomComputerChoice = (choice) => {
+//   let pass = Math.floor(Math.random() * choice.length)
+//   return questions[pass];
+// }
+
+// let getResults = (question, getRandomComputerChoice) => {
+//   if(getRandomQuestion === getRandomComputerChoice) {
+//     console.log("correct");
+//   }
+// }
