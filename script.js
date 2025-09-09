@@ -55,3 +55,62 @@ document.addEventListener("DOMContentLoaded", () => {
     input.focus();
   });
 });
+
+// let questions = [
+//   {
+//   category:"Javascript quiz",
+//   question: "Which of the following is used to declare a variable in JavaScript?",
+//   choices: ["var", "class","strict"],
+//   answer: "var",
+// },
+// {
+//   category: "Java quiz",
+//   question: "Which keyword is used to define a class in Java?",
+//   choices: ["var","object", "class"],
+//   answer: "class",
+// },
+//  {
+//     category: "JavaScript quiz",
+//     question: "Which method is used to add an element to the end of an array?",
+//     choices: ["pop()","push()","shift()"],
+//     answer: "push()",
+//   },
+//     {
+//     category: "Java quiz",
+//     question: "Which keyword is used to inherit a class in Java?",
+//     choices: ["extends", "inherits", "super"],
+//     answer: "extends",
+//   },
+//  {
+//     category: "JavaScript quiz",
+//     question: "Which method is used to parse a JSON string into a JavaScript object?",
+//     choices: ["JSON.stringify()", "JSON.decode()","JSON.parse()"],
+//     answer: "JSON.parse()",
+//   }
+// ]
+// let getRandomQuestion = (questions) => {
+//   let index = Math.floor(Math.random() * questions.length);
+//   return questions[index];
+// }
+
+// let getRandomComputerChoice = (choices) => {
+//   let index = Math.floor(Math.random() *choices.length)
+//   return choices[index];
+// };
+
+// let selectedQuestion = getRandomQuestion(questions);
+
+// let computerChoice = getRandomComputerChoice(selectedQuestion.choices);
+
+// console.log("Question:", selectedQuestion.question);
+// console.log("Computer's Choice:", computerChoice);
+
+// let getResults = (selectedQuestion, computerChoice) => {
+//    if(computerChoice === selectedQuestion.answer) {
+//   return "The computer's choice is correct!"
+//   }
+//   else{
+//      return `The computer's choice is wrong. The correct answer is: ${selectedQuestion.answer}`;
+//   }
+// }
+// console.log(getResults(selectedQuestion,computerChoice));
