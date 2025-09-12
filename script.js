@@ -56,61 +56,66 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// let questions = [
-//   {
-//   category:"Javascript quiz",
-//   question: "Which of the following is used to declare a variable in JavaScript?",
-//   choices: ["var", "class","strict"],
-//   answer: "var",
-// },
-// {
-//   category: "Java quiz",
-//   question: "Which keyword is used to define a class in Java?",
-//   choices: ["var","object", "class"],
-//   answer: "class",
-// },
-//  {
-//     category: "JavaScript quiz",
-//     question: "Which method is used to add an element to the end of an array?",
-//     choices: ["pop()","push()","shift()"],
-//     answer: "push()",
-//   },
-//     {
-//     category: "Java quiz",
-//     question: "Which keyword is used to inherit a class in Java?",
-//     choices: ["extends", "inherits", "super"],
-//     answer: "extends",
-//   },
-//  {
-//     category: "JavaScript quiz",
-//     question: "Which method is used to parse a JSON string into a JavaScript object?",
-//     choices: ["JSON.stringify()", "JSON.decode()","JSON.parse()"],
-//     answer: "JSON.parse()",
-//   }
-// ]
-// let getRandomQuestion = (questions) => {
-//   let index = Math.floor(Math.random() * questions.length);
-//   return questions[index];
-// }
+let dayNumber = 5;
+let count = 0;
+let cc = (dayNumber) => {
+  count = 6;
+  switch (dayNumber) {
+    case 1:
+      if (count == 2 || count == 3 || count == 4 || count == 5 || count == 6)
+        count = 6 - 1;
+      return `${count} Bet`;
+    case 2:
+      return `${count} Bet`;
+    case 3:
+      return `${count} Bet`;
+    case 4:
+      return `${count} Hold`;
+    case 5:
+      count == 2 || count == 3 || count == 4 || count == 5 || count == 6;
+      count = 6 - 1;
+      return `${count} Bet`;
+    case 6:
+      count == 2 || count == 3 || count == 4 || count == 5 || count == 6;
+      count = 6 - 1;
+      return `${count} Bet`;
+    case 7:
+      count == 2 || count == "J" || count == 9 || count == 2;
+      count = 1;
+      return `${count} Bet`;
+    case 8:
+      return `${count} Bet`;
+    case 9:
+      count == 7 || count == 8;
+      count = 0;
+      return `${count} Hold`;
+    case 10:
+      count == 2 || count == 2;
+      count = 1;
+      return `${count} Bet`;
+    case "A":
+      count == "J" || count == "Q" || count == "K" || count == 10;
+      count = -5;
+      return `${count} Hold`;
+    case "A":
+      count == "J" || count == "Q" || count == "K" || count == 10;
+      count = -5;
+      return `${count} Hold`;
+    case "K":
+      count == 3 || count == 2 || count == "A" || count == 10;
+      count = -1;
+      return `${count} Hold`;
+    default:
+      count == 2 || count == 2;
+      count = 1;
+      return `${count} Bet`;
+  }
+};
 
-// let getRandomComputerChoice = (choices) => {
-//   let index = Math.floor(Math.random() *choices.length)
-//   return choices[index];
-// };
-
-// let selectedQuestion = getRandomQuestion(questions);
-
-// let computerChoice = getRandomComputerChoice(selectedQuestion.choices);
-
-// console.log("Question:", selectedQuestion.question);
-// console.log("Computer's Choice:", computerChoice);
-
-// let getResults = (selectedQuestion, computerChoice) => {
-//    if(computerChoice === selectedQuestion.answer) {
-//   return "The computer's choice is correct!"
-//   }
-//   else{
-//      return `The computer's choice is wrong. The correct answer is: ${selectedQuestion.answer}`;
-//   }
-// }
-// console.log(getResults(selectedQuestion,computerChoice));
+console.log(cc(6)); // Output: Thursday
+console.log(cc(9)); // Output: Thursday
+console.log(cc(7)); // Output: Thursday
+console.log(cc(10)); // Output: Thursday
+console.log(cc("K")); // Output: Thursday
+console.log(cc("A")); // Output: Thursday
+console.log(cc("A")); // Output: Thursday
