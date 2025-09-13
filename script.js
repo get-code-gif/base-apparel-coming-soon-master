@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (regex.test(email)) {
-      alert("hello");
+      // alert("hello");
       input.value = "";
       error.style.display = "none";
       errorIcon.style.display = "none";
@@ -56,10 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let dayNumber = 5;
+
+let dayNumber = 0;
 let count = 0;
 let cc = (dayNumber) => {
-  count = 6;
+  count = 0;
+  let card = "A";
   switch (dayNumber) {
     case 1:
       if (count == 2 || count == 3 || count == 4 || count == 5 || count == 6)
@@ -94,21 +96,24 @@ let cc = (dayNumber) => {
       count = 1;
       return `${count} Bet`;
     case "A":
-      count == "J" || count == "Q" || count == "K" || count == 10;
-      count = -5;
-      return `${count} Hold`;
-    case "A":
-      count == "J" || count == "Q" || count == "K" || count == 10;
-      count = -5;
-      return `${count} Hold`;
+     if(count = [10,"J","Q","K","A"].includes(card)){
+      count = -1+-1+-1+-1+-1;
+    console.log( `${count} Hold`);  
+     } 
+  case "A":
+     if(count = [3,7,"Q",8,"A"].includes(card)){
+      count = 1+0+-1+0+-1
+    console.log( `${count} Hold`); 
+     }  
     case "K":
       count == 3 || count == 2 || count == "A" || count == 10;
       count = -1;
       return `${count} Hold`;
     default:
-      count == 2 || count == 2;
-      count = 1;
-      return `${count} Bet`;
+        if(count = [10, "J", "Q", "K"]){
+      count = -5;
+      return `${count} Hold`; 
+     } 
   }
 };
 
@@ -119,3 +124,12 @@ console.log(cc(10)); // Output: Thursday
 console.log(cc("K")); // Output: Thursday
 console.log(cc("A")); // Output: Thursday
 console.log(cc("A")); // Output: Thursday
+
+
+
+
+
+
+
+
+
