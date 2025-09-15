@@ -99,4 +99,5 @@ Using JavaScript for form validation is an area I want to continue developing. I
 ## Acknowledgments
 
 I want to thank the Frontend Mentor community for providing such engaging challenges that help developers like me improve our skills. The feedback and support from the community have been invaluable in my learning journey.
+
 https://copilot.microsoft.com/shares/QERQyvTyiG3sZ654RACGW
